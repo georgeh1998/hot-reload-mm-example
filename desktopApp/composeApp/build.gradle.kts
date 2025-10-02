@@ -13,6 +13,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api(projects.sharedHotreloadable)
+            api(projects.sharedNonHotreloadable)
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)

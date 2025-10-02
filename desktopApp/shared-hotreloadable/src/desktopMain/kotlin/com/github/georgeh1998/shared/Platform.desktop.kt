@@ -1,3 +1,3 @@
 package com.github.georgeh1998.shared
 
-actual fun platform(): String = "Desktop"
+actual fun platform(): String = "Desktop from hotreloadable module"
