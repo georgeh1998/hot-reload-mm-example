@@ -4,8 +4,11 @@ plugins {
 }
 
 kotlin {
+
+    jvm("desktop")
+
     androidLibrary {
-        namespace = "com.github.georgeh1998.shared"
+        namespace = "com.github.georgeh1998.shared-hotreloadable"
         compileSdk = 36
         minSdk = 24
     }

@@ -12,6 +12,7 @@ kotlin {
     
     sourceSets {
         commonMain.dependencies {
+            api(projects.sharedHotreloadable)
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
@@ -20,9 +21,6 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-        }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
         }
         jvmMain.dependencies {
             implementation(compose.desktop.currentOs)
