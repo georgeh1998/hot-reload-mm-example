@@ -35,4 +35,4 @@ plugins {
 include(":composeApp")
 include(":shared-hotreloadable")
 include(":shared-non-hotreloadable")
-project(":shared-non-hotreloadable").projectDir = file("../shared-non-hotreloadable")
+project(":shared-non-hotreloadable").projectDir = file("../androidApp/shared-non-hotreloadable")
