@@ -22,20 +22,23 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 fun App() {
     MaterialTheme {
         CompositionLocalProvider(
-            LocalTextStyle provides LocalTextStyle.current.copy(fontSize = 48.sp, lineHeight = 128.sp)
+            LocalTextStyle provides LocalTextStyle.current.copy(
+                fontSize = 48.sp,
+                lineHeight = 128.sp
+            )
         ) {
-        Column(
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
-                .safeContentPadding()
-                .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center,
-        ) {
-            Text("This is desktop app")
-            HotReloadableText()
-            NonHotReloableText()
-        }
+            Column(
+                modifier = Modifier
+                    .background(MaterialTheme.colorScheme.primaryContainer)
+                    .safeContentPadding()
+                    .fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
+            ) {
+                Text("This is desktop app")
+                HotReloadableText()
+                NonHotReloableText()
             }
+        }
     }
 }
